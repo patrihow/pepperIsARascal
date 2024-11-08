@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Patricia Bravo | Web designer</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+<header id="entete" role="banner" class="header-container">
+    <a href="index.html" class="logo-link">
+        <picture class="logo">
+            <img src="assets/images/patribravo-logo.svg" alt="Logo Tamara" loading="lazy">
+        </picture>
+    </a>
+    <nav id="navigation" class="nav-container">
+        <a href="parcours.html">Parcours</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <aside class="menu-deroulant">
+        <a href="#" class="menu-link">Langue ▼</a>
+    <div>
+        <a href="index.html">Français</a>
+        <a href="index.html">Anglais</a>
+    </div>
+    </aside>
+</header>
+
+    <!--CONTENTU-->
+<!-- CONTENTU -->
+<main>
+    <div id="formulaire">
+        <h3 class="formulaire-titres">Formulaire de contact</h3>
+        <p>Dis-moi les détails et je vous coordonnerai, je ferai un retour dans les prochaines 3 jours laborieux.</p>
+        <form action="/traitement-formulaire" method="get">
+            <label for="champ_nom">Nom :</label>
+            <input type="text" id="champ_nom" name="champ_nom" required placeholder="nom">
+
+            <label for="champ_prenom">Prénom :</label>
+            <input type="text" id="champ_prenom" name="champ_prenom" required placeholder="prénom">
+
+            <label for="champ_organisation">Organisation :</label>
+            <input type="text" id="champ_organisation" name="champ_organisation" required placeholder="organisation">
+
+            <label for="champ_telephone">Numéro de téléphone :</label>
+            <input type="tel" id="champ_telephone" name="champ_telephone" required placeholder="numéro de téléphone">
+
+            <label for="champ_courriel">Courriel :</label>
+            <input type="email" id="champ_courriel" name="champ_courriel" required placeholder="courriel">
+
+            <label for="champ_raison">Raison du message :</label>
+            <input type="text" required placeholder="raison de votre message" name="raison" id="champ_raison">
+
+            <label for="champ_message">Message :</label>
+            <textarea id="champ_message" name="champ_message" required placeholder="message"></textarea>
+
+            <label for="champ_source">Comment avez-vous entendu parler de mes services?</label>
+            <select id="champ_source" name="champ_source" required>
+                <option value="" disabled selected>Sélectionner une option</option>
+                <option value="annonce">Annonce</option>
+                <option value="reference">Référence</option>
+                <option value="recherche">Recherche</option>
+                <option value="aucune">Aucune de ces réponses</option>
+            </select>
+
+            <button class="submited" type="submit">Soumettre le formulaire</button>
+            <button class="refused" type="reset">Réinitialiser le formulaire</button>
+        </form>
+    </div>
+</main>
+
+
+    <!-- FOOTER -->
+<footer class="contenu-footer">
+    <ul class="social-icons">
+      <li>
+        <a href="#">
+          <img src="assets/images/Icon-Medium.svg" alt="" aria-hidden="true">
+          <span>Medium</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/Icon-Newsletter.svg" alt="" aria-hidden="true">
+          <span>Newsletter</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/Icon-Twitter.svg" alt="" aria-hidden="true">
+          <span>Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/Icon-Linkedin.svg" alt="" aria-hidden="true">
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="assets/images/Icon-Mail.svg" alt="" aria-hidden="true">
+          <span>E-mail</span>
+        </a>
+      </li>
+    </ul>
+    <div class="legal">
+      <a href="#">Déclaration d'accessibilité</a>
+      <a href="#">Données personnelles</a>
+    </div>
+  </footer>
+
+</body>
+</html>
